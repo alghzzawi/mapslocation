@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import axios from 'axios';
 class App extends React.Component{
@@ -51,7 +52,7 @@ class App extends React.Component{
         <p>Lat : {this.state.lat}</p>
 
         {this.state.errorFlag && <h4>Error 404 : {this.state.error}</h4>}
-        <img src= {this.state.image} />
+        <img src= {this.state.image}/>
 
       </div>
     )
